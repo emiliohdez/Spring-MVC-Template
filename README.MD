@@ -1,4 +1,4 @@
-# Spring-MVC-Skeleton 
+# Spring MVC Project Template
 This is a basic skeleton of an MVC project built with the Spring Java Framework :computer:, the classes and files contained are a mini sample that aims to show the data flow through the layers of the template.
 
 **First**, you can take a look to the dependencies of this template in the `pom.xml` file.
