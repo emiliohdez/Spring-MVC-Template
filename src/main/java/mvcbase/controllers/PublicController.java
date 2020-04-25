@@ -1,6 +1,6 @@
 package mvcbase.controllers;
 
-import mvcbase.model.usecases.ListAllItems;
+import mvcbase.model.daos.ItemDAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,12 +18,12 @@ public class PublicController {
     @RequestMapping("/")
     public ModelAndView showList() {
         modelView = new ModelAndView();
-        String actionResult = new ListAllItems(/*If the use case need some params, here.*/).execute();
+        String result = ItemDAO.getAllItems();
         /*
         * I recommend you to make a final filter to the response, and according to the case, you can add a clever
         * message for building the interface and an specific HTTP status if needed.
          */
-        modelView.addObject("list", actionResult);
+        modelView.addObject("list", result);
         modelView.setViewName("index");
         return modelView;
     }
