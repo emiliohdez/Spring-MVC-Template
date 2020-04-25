@@ -1,8 +1,6 @@
 package mvcbase.controllers;
 
-import mvcbase.controllers.usecases.ListAllItems;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import mvcbase.model.usecases.ListAllItems;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

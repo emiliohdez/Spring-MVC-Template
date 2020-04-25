@@ -1,4 +1,4 @@
-package mvcbase.controllers.usecases;
+package mvcbase.model.usecases;
 
 import mvcbase.model.dao.ItemDAO;
 
